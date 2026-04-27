@@ -20,7 +20,7 @@ const Accordion = (props) => {
         name={name}
         open={isOpen}
       >
-        <summary className="accordion_summary">
+        <summary className="accordion__summary">
           <h3 className="accordion__title h5">
             <span role="term" aria-details={id}>{title}</span>
           </h3>
