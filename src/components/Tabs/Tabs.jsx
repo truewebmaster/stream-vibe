@@ -2,6 +2,7 @@ import './Tabs.scss'
 import classNames from 'classnames'
 import getTabsElementsIdsFromTitle
   from "./utils/getTabsElementsIdsFromTitle";
+import TabsNavigation from "./components/TabsNavigation";
 
 const Tabs = (props) => {
   const {
@@ -19,7 +20,10 @@ const Tabs = (props) => {
       })}
     >
       {!navigationTargetElementId && (
-        <div>НАВИГАЦИЯ</div>
+        <TabsNavigation
+          title={title}
+          items={items}
+        />
       )}
       <div className="tabs__body">
         {items.map((item, index) => {
