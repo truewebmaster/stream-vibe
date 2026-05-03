@@ -25,7 +25,6 @@ const Categories = () => {
       <Slider
         navigationTargetElementId={sliderNavigationID}
         isBeyondTheViewportOnMobileS
-        hasScrollbar
       >
         {categoryItems.map((categoryItem, index) => (
           <CategoryCard
